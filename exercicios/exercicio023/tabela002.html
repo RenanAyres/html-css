@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) {  /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+    -->
+    <table>
+        
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 056 495	</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 941 613</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 833 712</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 658 649</td>
+            </tr>
+            <tr>
+                <td>Rio Grande no Norte</td>
+                <td class="num">3 302 729</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 271 199</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 127 683</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 757 013</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 209 558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 581 196</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 511 460</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018	</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733 759</td>
+            </tr>
+            <tr>
+                <td> Roraima</td>
+                <td class="num">636 707</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>203 062 512</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto possimus ducimus molestiae, eius vitae molestias atque laborum quae soluta ratione in dolore temporibus architecto nostrum tenetur? Optio ullam ex dolorum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ab. Maiores laborum quas cum reprehenderit eveniet recusandae quisquam minima impedit. 20lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat recusandae ut eveniet delectus consequatur veniam minima excepturi asperiores laborum placeat, modi laboriosam. Autem itaque, quas esse corporis impedit repudiandae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus, hic doloribus aperiam sequi dignissimos earum id perferendis veritatis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex, aliquid blanditiis recusandae minus libero nesciunt eaque hic deserunt, odio deleniti. Deleniti harum, modi debitis magnam rem neque deserunt nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim ab, blanditiis saepe aspernatur voluptatibus sunt perspiciatis ea officiis hic sint facilis necessitatibus rem, temporibus et accusamus voluptatum incidunt atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate atque numquam perferendis, illo quo culpa voluptatibus quasi alias, id voluptates autem nisi obcaecati dolorem cupiditate quam quos adipisci consequuntur magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam enim placeat corporis saepe temporibus quae soluta maxime magnam, eveniet, quam mollitia a rem expedita minima unde id inventore totam modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam delectus beatae quibusdam explicabo nisi excepturi ipsum totam veniam dignissimos? Ullam rem blanditiis veritatis dolorem doloremque repellat quae fuga totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, autem ab minus similique et fugit hic quis debitis optio. Quod facere amet in asperiores! Mollitia dolorum earum incidunt id cum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illum voluptates, error perferendis nihil id ipsum iusto explicabo velit illo quod voluptatem eum sunt. Ullam reiciendis maiores tenetur deserunt delectus? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus, hic doloribus aperiam sequi dignissimos earum id perferendis veritatis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex, aliquid blanditiis recusandae minus libero nesciunt eaque hic deserunt, odio deleniti. Deleniti harum, modi debitis magnam rem neque deserunt nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim ab, blanditiis saepe aspernatur voluptatibus sunt perspiciatis ea officiis hic sint facilis necessitatibus rem, temporibus et accusamus voluptatum incidunt atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate atque numquam perferendis, illo quo culpa voluptatibus quasi alias, id voluptates autem nisi obcaecati dolorem cupiditate quam quos adipisci consequuntur magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam enim placeat corporis saepe temporibus quae soluta maxime magnam, eveniet, quam mollitia a rem expedita minima unde id inventore totam modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam delectus beatae quibusdam explicabo nisi excepturi ipsum totam veniam dignissimos? Ullam rem blanditiis veritatis dolorem doloremque repellat quae fuga totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, autem ab minus similique et fugit hic quis debitis optio. Quod facere amet in asperiores! Mollitia dolorum earum incidunt id cum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illum voluptates, error perferendis nihil id ipsum iusto explicabo velit illo quod voluptatem eum sunt. Ullam reiciendis maiores tenetur deserunt delectus? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus, hic doloribus aperiam sequi dignissimos earum id perferendis veritatis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex, aliquid blanditiis recusandae minus libero nesciunt eaque hic deserunt, odio deleniti. Deleniti harum, modi debitis magnam rem neque deserunt nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim ab, blanditiis saepe aspernatur voluptatibus sunt perspiciatis ea officiis hic sint facilis necessitatibus rem, temporibus et accusamus voluptatum incidunt atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate atque numquam perferendis, illo quo culpa voluptatibus quasi alias, id voluptates autem nisi obcaecati dolorem cupiditate quam quos adipisci consequuntur magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam enim placeat corporis saepe temporibus quae soluta maxime magnam, eveniet, quam mollitia a rem expedita minima unde id inventore totam modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam delectus beatae quibusdam explicabo nisi excepturi ipsum totam veniam dignissimos? Ullam rem blanditiis veritatis dolorem doloremque repellat quae fuga totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, autem ab minus similique et fugit hic quis debitis optio. Quod facere amet in asperiores! Mollitia dolorum earum incidunt id cum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illum voluptates, error perferendis nihil id ipsum iusto explicabo velit illo quod voluptatem eum sunt. Ullam reiciendis maiores tenetur deserunt delectus? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus, hic doloribus aperiam sequi dignissimos earum id perferendis veritatis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex, aliquid blanditiis recusandae minus libero nesciunt eaque hic deserunt, odio deleniti. Deleniti harum, modi debitis magnam rem neque deserunt nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim ab, blanditiis saepe aspernatur voluptatibus sunt perspiciatis ea officiis hic sint facilis necessitatibus rem, temporibus et accusamus voluptatum incidunt atque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate atque numquam perferendis, illo quo culpa voluptatibus quasi alias, id voluptates autem nisi obcaecati dolorem cupiditate quam quos adipisci consequuntur magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam enim placeat corporis saepe temporibus quae soluta maxime magnam, eveniet, quam mollitia a rem expedita minima unde id inventore totam modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam delectus beatae quibusdam explicabo nisi excepturi ipsum totam veniam dignissimos? Ullam rem blanditiis veritatis dolorem doloremque repellat quae fuga totam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, autem ab minus similique et fugit hic quis debitis optio. Quod facere amet in asperiores! Mollitia dolorum earum incidunt id cum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illum voluptates, error perferendis nihil id ipsum iusto explicabo velit illo quod voluptatem eum sunt. Ullam reiciendis maiores tenetur deserunt delectus? </p>
+</body>
+</html>
